@@ -1,6 +1,7 @@
 from flask_restx import Api, Resource, fields
 import jwt
 from .models import db, Users
+from requests import request
 
 rest_api = Api(version="1.0", title="Users API") # Инициализация API
 # Инициализация валидатора для проверки данных из формы регистарции
